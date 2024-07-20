@@ -1,0 +1,46 @@
+@import "../../globals.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
+
+  & > .box {
+    background-color: #eee2a5;
+    border-radius: 25px;
+    box-shadow: inset 0 0 15px 4px #ff9432,
+      inset 0 -4px 4px 0 rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    & > .title {
+      font-size: 40px;
+      font-weight: 700;
+
+      @media (max-width: $media-max-width) {
+        text-align: center;
+        font-size: 25px;
+      }
+    }
+
+    & > .button {
+      padding: 7px 20px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 30px;
+      background-color: #218628;
+      border: 2px solid #000;
+      border-radius: 30px;
+      width: fit-content;
+    }
+  }
+
+  & > .player {
+    width: 400px;
+    height: auto;
+  }
+}
