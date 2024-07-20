@@ -1,4 +1,4 @@
-$media-max-width: 600px;
+@import "../../globals.scss";
 
 @mixin box {
   background-color: #eee2a5;

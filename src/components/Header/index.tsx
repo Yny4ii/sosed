@@ -9,12 +9,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.scss";
+import { acmesa } from "@/fonts";
 
 export default function Header() {
   const [expanded, setExpanded] = React.useState(false);
 
   return (
-    <header className={styles.header_container}>
+    <header className={classNames(styles.header_container, acmesa.className)}>
       <div className={styles.header_content}>
         <div className={styles.outer_container2}>
           <button

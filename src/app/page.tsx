@@ -1,12 +1,12 @@
-import { acmesa } from "@/fonts";
-import classNames from "classnames";
-import styles from "./page.module.scss";
 import Header from "@/components/Header";
+import Intro from "@/components/Intro";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
-    <main className={classNames(styles.main, acmesa.className)}>
+    <main className={styles.main}>
       <Header />
+      <Intro />
     </main>
   );
 }

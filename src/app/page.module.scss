@@ -1,17 +1,5 @@
-$media-max-width: 600px;
-
 .main {
   position: relative;
   min-height: 100vh;
-  background: {
-    image: url(/background.png);
-    repeat: no-repeat;
-    size: cover;
-  }
   padding-top: 150px; // padding for floating header
-
-  @media (max-width: $media-max-width) {
-    background-size: unset;
-    background-position-x: 50%;
-  }
 }
