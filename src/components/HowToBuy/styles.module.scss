@@ -1,0 +1,67 @@
+@import "../../globals.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 0 10%;
+
+  @media (max-width: $media-max-width) {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+
+  & > .neighbour {
+    width: 400px;
+    height: auto;
+
+    @media (max-width: $media-max-width) {
+      width: 100%;
+    }
+  }
+
+  & > .box {
+    margin-top: 170px;
+    margin-left: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #eee2a5;
+    border-radius: 25px;
+    box-shadow: inset 0 0 15px 4px #ff9432,
+      inset 0 -4px 4px 0 rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    width: 500px;
+    height: fit-content;
+
+    @media (max-width: $media-max-width) {
+      margin: 0;
+      width: 100%;
+    }
+
+    & > .title {
+      font-size: 30px;
+      font-weight: 700;
+
+      @media (max-width: $media-max-width) {
+        text-align: center;
+        font-size: 25px;
+      }
+    }
+
+    & > .box_content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      & > .link {
+        background-color: #218628;
+        border: 2px solid #000;
+        border-radius: 25px;
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        align-self: flex-start;
+      }
+    }
+  }
+}
