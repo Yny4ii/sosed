@@ -24,7 +24,7 @@ export default function Header() {
             <Image src={expanded ? close_svg : burger_svg} alt="" />
           </button>
           <div className={styles.outer_container}>
-            <div className={styles.inner_container}>LOGO</div>
+            <div className={styles.inner_container}></div>
             <div className={styles.inner_container}>
               <div className={styles.links_container}>
                 {INNER_LINKS.map(({ text, href }, key) => {

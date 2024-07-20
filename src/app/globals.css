@@ -11,19 +11,6 @@ body {
   background: #000;
 }
 
-body {
-  background-image: url(/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-@media (max-width: 600px) {
-  body {
-    background-position-x: 50%;
-  }
-}
-
 button {
   background: none;
   border: none;

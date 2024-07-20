@@ -1,14 +1,15 @@
-import Header from "@/components/Header";
-import Intro from "@/components/Intro";
-import styles from "./page.module.scss";
 import AboutUs from "@/components/AboutUs";
-import Roadmap from "@/components/Roadmap";
-import HowToBuy from "@/components/HowToBuy";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import HowToBuy from "@/components/HowToBuy";
+import Intro from "@/components/Intro";
+import Roadmap from "@/components/Roadmap";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <div className={styles.background} />
       <Header />
       <Intro />
       <AboutUs />

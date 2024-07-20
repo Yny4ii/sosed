@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 export default function Footer() {
   return (
     <footer className={classNames(styles.container, acmesa.className)}>
-      <span>LOGO</span>
+      {/* <span>LOGO</span> */}
       <div className={styles.socials_container}>
         {SOCIALS.map(({ imageSrc, href }, key) => {
           return (
