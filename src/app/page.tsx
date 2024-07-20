@@ -4,6 +4,7 @@ import styles from "./page.module.scss";
 import AboutUs from "@/components/AboutUs";
 import Roadmap from "@/components/Roadmap";
 import HowToBuy from "@/components/HowToBuy";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutUs />
       <Roadmap />
       <HowToBuy />
+      <Footer />
     </main>
   );
 }

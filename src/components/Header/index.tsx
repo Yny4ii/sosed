@@ -2,14 +2,13 @@
 
 import burger_svg from "@/assets/icons/burger.svg";
 import close_svg from "@/assets/icons/close.svg";
-import telegram_svg from "@/assets/icons/telegram.svg";
-import twitter_svg from "@/assets/icons/twitter.svg";
+import { INNER_LINKS, OUTER_LINKS, SOCIALS } from "@/config";
+import { acmesa } from "@/fonts";
 import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.scss";
-import { acmesa } from "@/fonts";
 
 export default function Header() {
   const [expanded, setExpanded] = React.useState(false);
@@ -114,20 +113,3 @@ export default function Header() {
     </header>
   );
 }
-
-const SOCIALS = [
-  { imageSrc: telegram_svg, href: "#" },
-  { imageSrc: twitter_svg, href: "#" },
-];
-
-const OUTER_LINKS = [
-  { text: "DEXTOOLS", href: "#" },
-  { text: "DEXSCREENER", href: "#" },
-  { text: "CONTRACT ADDRESS", href: "#" },
-];
-
-const INNER_LINKS = [
-  { text: "ABOUT US", href: "#" },
-  { text: "ROADMAP", href: "#" },
-  { text: "HOW TO BUY", href: "#" },
-];

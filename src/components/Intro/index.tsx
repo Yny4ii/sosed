@@ -6,8 +6,7 @@ import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.scss";
-
-const ADDRESS = "EQAWzEKcdnykvXfUNouqdS62tvrp32bCxuKS6eQrS6ISgcLo";
+import { ADDRESS } from "@/config";
 
 export default function Intro() {
   return (
