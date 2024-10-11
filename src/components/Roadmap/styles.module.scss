@@ -33,10 +33,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-
-    @media (max-width: $media-max-width) {
-      flex-direction: column;
-    }
+    flex-wrap: wrap;
 
     & > .card {
       display: flex;
