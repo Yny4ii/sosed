@@ -17,16 +17,17 @@ export default function Header() {
     <header className={classNames(styles.header_container, acmesa.className)}>
       <div className={styles.header_content}>
         <div className={styles.outer_container2}>
-          <button
-            className={styles.mobile_menu_button}
-            onClick={() => setExpanded((expanded) => !expanded)}
-          >
-            <Image src={expanded ? close_svg : burger_svg} alt="" />
-          </button>
+          <div className={styles.mobile_menu_container}>
+            <button onClick={() => setExpanded((expanded) => !expanded)}>
+              <Image src={expanded ? close_svg : burger_svg} alt="" />
+            </button>
+            <h1>$HUI</h1>
+          </div>
           <div className={styles.outer_container}>
             <div className={styles.inner_container}></div>
             <div className={styles.inner_container}>
               <div className={styles.links_container}>
+                <h1>$HUI</h1>
                 {INNER_LINKS.map(({ text, href }, key) => {
                   return (
                     <Link key={key} className={styles.link} href={href}>

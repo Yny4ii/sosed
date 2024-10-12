@@ -4,7 +4,7 @@
   background-color: #eee2a5;
   border: 1.33px solid rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 0 10px 2.67px #ff9432,
-    0 -2.67px 2.67px 0 rgba(0, 0, 0, 0.5);
+  0 -2.67px 2.67px 0 rgba(0, 0, 0, 0.5);
 }
 
 .header_container {
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 770px) {
+  @media (max-width: $media-header-max-width) {
     padding-top: 15px;
     --padding: 5px;
   }
@@ -31,7 +31,7 @@
     flex-direction: column;
     gap: 30px;
 
-    @media (max-width: 770px) {
+    @media (max-width: $media-header-max-width) {
       padding: 10px;
     }
 
@@ -89,7 +89,7 @@
     }
 
     & > .expanded {
-      @media (max-width: 770px) {
+      @media (max-width: $media-header-max-width) {
         display: flex;
       }
     }
@@ -101,23 +101,33 @@
       justify-content: space-between;
       width: 100%;
 
-      & > .mobile_menu_button {
+      & > .mobile_menu_container {
         display: none;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
-        background-color: #d4ab80;
-        border-radius: 21px;
+        gap: 16px;
 
-        @media (max-width: 770px) {
+
+        @media (max-width: $media-header-max-width) {
           display: flex;
         }
 
-        &:active {
-          animation: rotate 100ms ease;
+
+        & > .mobile_menu_button {
+          width: 40px;
+          height: 40px;
+          background-color: #d4ab80;
+          border-radius: 21px;
+
+
+          &:active {
+            animation: rotate 100ms ease;
+          }
         }
+
+
       }
+
 
       // used for space-between mobile_menu_button and header content
       & > .outer_container {
@@ -126,7 +136,7 @@
         justify-content: space-between;
         width: 100%;
 
-        @media (max-width: 770px) {
+        @media (max-width: $media-header-max-width) {
           width: unset;
         }
 
@@ -137,6 +147,7 @@
           & > .button_container {
             margin-left: 30px;
             align-self: stretch;
+
             & > .button {
               display: flex;
               align-items: center;
@@ -167,7 +178,7 @@
               border-radius: 21px;
             }
 
-            @media (max-width: 770px) {
+            @media (max-width: $media-header-max-width) {
               display: none;
             }
           }
@@ -186,7 +197,7 @@
               // -webkit-text-stroke: 0.1px #000;
             }
 
-            @media (max-width: 770px) {
+            @media (max-width: $media-header-max-width) {
               display: none;
             }
           }
@@ -208,7 +219,7 @@
       color: #000;
     }
 
-    @media (max-width: 770px) {
+    @media (max-width: $media-header-max-width) {
       display: none;
     }
   }
